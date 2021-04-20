@@ -9,14 +9,8 @@ package MultiThreading.ThreadCreation;
  *
  * @author alla.kumarreddy
  */
-public class Driver {
-    
-    public static void main(String args[]){
-        TestThread testThread = new TestThread();
-        testThread.start();
-        
-        TestThreadRunnable runnable = new TestThreadRunnable();
-        new Thread(runnable).start();
+public class TestThread extends Thread{
+    public void run(){
+        System.out.println("Thread with Test Thread using Thread class");
     }
-    
 }
